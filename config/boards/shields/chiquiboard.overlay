@@ -1,0 +1,57 @@
+&i2c0 {
+    status = "okay";
+    sda-pin = <26>;
+    scl-pin = <27>;
+    clock-frequency = <400000>;
+
+    mcp23017: mcp23017@20 {
+        compatible = "microchip,mcp23017";
+        reg = <0x20>;
+        label = "MCP23017";
+        gpio-controller;
+        #gpio-cells = <2>;
+        ngpios = <16>;
+        status = "okay";
+    };
+};
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&gpio0 6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>
+            , <&gpio1 0 GPIO_ACTIVE_HIGH>
+            ;
+
+        row-gpios
+            = <&MCP23017 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+
+            , <&MCP23017 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+
+            , <&MCP23017 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&MCP23017 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
