@@ -36,7 +36,7 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         mods = <(MOD_LALT|MOD_RALT)>;
-                        bindings = <&ç_morph_a>, <&kp TILDE>
+                        bindings = <&ç_morph_a>, <&kp TILDE>;
                 };
                 
                 é_morph_a: é_morph_a {
