@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/ {
+/*/ {
         unicode_map {
                 compatible = "zmk,unicode-map";
                 C_CEDILLE: c_cedille { code = <0x00E7>; };
@@ -23,27 +23,14 @@
                 U_GRAVE_CAPS: u_grave_caps { unicode = <0x00D9>; };
                 TREMA: trema { unicode = <0x00A8>; };
         };
-};
+};*/
 
 / {
         behaviors {
-                morph_BC: morph_BC {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp B>, <&kp C>;
-                        mods = <(MOD_LCTL|MOD_RCTL)>;
-                };
-                morph_ABC: morph_ABC {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp A>, <&morph_BC>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
                 c_cedille_morph_a: c_cedille_morph_a {
-                        compatible = "zmk,behavior-mod-morph";
+                        compatible = "zmk,behavior-mod-morph, behavior-macro";
                         #binding-cells = <0>;
-                        bindings = <&kp C_CEDILLE>, <&kp C_CEDILLE_CAPS>;
+                        bindings = <&macro_tap "é">, <&macro_tap "É">;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
