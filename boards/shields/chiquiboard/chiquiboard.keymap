@@ -29,7 +29,7 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
-                        bindings = <&kp C_CEDILLE>, <&kp C_CEDILLE_CAPS>;
+                        bindings = <&kp c_cedille>, <&kp C_CEDILLE_CAPS>;
                 };
 
                 c_cedille_morph: c_cedille_morph {
