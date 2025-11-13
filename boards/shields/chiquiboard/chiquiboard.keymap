@@ -29,7 +29,7 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
-                        bindings = <&kp c_cedille>, <&kp C_CEDILLE_CAPS>;
+                        bindings = <&kp c_cedille>, <&kp c_cedille_caps>;
                 };
 
                 c_cedille_morph: c_cedille_morph {
@@ -43,7 +43,7 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
-                        bindings = <&kp E_AIGU>, <&kp E_AIGU_CAPS>;
+                        bindings = <&kp e_aigu>, <&kp e_aigu_caps>;
                 };
 
                 e_aigu_morph: e_aigu_morph {
@@ -57,7 +57,7 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
-                        bindings = <&kp E_GRAVE>, <&kp E_GRAVE_CAPS>;
+                        bindings = <&kp e_grave>, <&kp e_grave_caps>;
                 };
 
                 e_grave_morph: e_grave_morph {
