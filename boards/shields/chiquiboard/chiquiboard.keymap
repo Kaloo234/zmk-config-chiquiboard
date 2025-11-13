@@ -25,6 +25,19 @@
         };
 
         behaviors {
+                morph_BC: morph_BC {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp B>, <&kp C>;
+                        mods = <(MOD_LCTL|MOD_RCTL)>;
+                };
+                morph_ABC: morph_ABC {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp A>, <&morph_BC>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
                 c_cedille_morph_a: c_cedille_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
