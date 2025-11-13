@@ -23,7 +23,9 @@
                 U_GRAVE_CAPS: u_grave_caps { unicode = <0x00D9>; };
                 TREMA: trema { unicode = <0x00A8>; };
         };
+};
 
+/ {
         behaviors {
                 morph_BC: morph_BC {
                         compatible = "zmk,behavior-mod-morph";
