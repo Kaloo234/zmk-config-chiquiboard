@@ -28,71 +28,71 @@
                 c_cedille_morph_a: c_cedille_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
                         bindings = <&kp c_cedille>, <&kp c_cedille_caps>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
                 c_cedille_morph: c_cedille_morph {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
                         bindings = <&c_cedille_morph_a>, <&kp TILDE>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
                 };
                 
                 e_aigu_morph_a: e_aigu_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
                         bindings = <&kp e_aigu>, <&kp e_aigu_caps>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
                 e_aigu_morph: e_aigu_morph {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
                         bindings = <&e_aigu_morph_a>, <&kp FSLH>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
                 };
 
                 e_grave_morph_a: e_grave_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
                         bindings = <&kp e_grave>, <&kp e_grave_caps>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
                 e_grave_morph: e_grave_morph {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
                         bindings = <&e_grave_morph_a>, <&kp BSLH>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
                 };
 
                 a_grave_morph_a: a_grave_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
                         bindings = <&kp A_GRAVE>, <&kp A_GRAVE_CAPS>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
                 a_grave_morph: a_grave_morph {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
                         bindings = <&a_grave_morph_a>, <&kp GRAVE>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
                 };
 
                 u_grave_morph_a: u_grave_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
                         bindings = <&kp U_GRAVE>, <&kp U_GRAVE_CAPS>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
                 u_grave_morph: u_grave_morph {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
                         bindings = <&u_grave_morph_a>, <&kp BSLH>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
                 };
         };
 
