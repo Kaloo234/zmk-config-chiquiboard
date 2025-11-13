@@ -41,7 +41,7 @@
                 c_cedille_morph_a: c_cedille_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp a>, <&kp A>;
+                        bindings = <&kp F>, <&kp M>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
