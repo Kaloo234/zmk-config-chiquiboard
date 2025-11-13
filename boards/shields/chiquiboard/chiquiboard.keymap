@@ -11,24 +11,24 @@
 / {
         unicode_map {
                 compatible = "zmk,unicode-map";
-                C_CEDILLE: c_cedille { unicode = <0x00E7>; };
-                C_CEDILLE_CAPS: c_cedille_caps { unicode = <0x00C7>; };
-                E_AIGU: e_aigu { unicode = <0x00E9>; };
-                E_AIGU_CAPS: e_aigu_caps { unicode = <0x00C9>; };
-                E_GRAVE: e_grave { unicode = <0x00E8>; };
-                E_GRAVE_CAPS: e_grave_caps { unicode = <0x00C8>; };
-                A_GRAVE: a_grave { unicode = <0x00E0>; };
-                A_GRAVE_CAPS: a_grave_caps { unicode = <0x00C0>; };
-                U_GRAVE: u_grave { unicode = <0x00F9>; };
-                U_GRAVE_CAPS: u_grave_caps { unicode = <0x00D9>; };
-                TREMA: trema { unicode = <0x00A8>; };
+                c_cedille: C_CEDILLE { unicode = <0x00E7>; };
+                c_cedille_caps: C_CEDILLE_CAPS { unicode = <0x00C7>; };
+                e_aigu: E_AIGU { unicode = <0x00E9>; };
+                e_aigu_caps: E_AIGU_CAPS { unicode = <0x00C9>; };
+                e_grave: E_GRAVE { unicode = <0x00E8>; };
+                e_grave_caps: E_GRAVE_CAPS { unicode = <0x00C8>; };
+                a_grave: A_GRAVE { unicode = <0x00E0>; };
+                a_grave_caps: A_GRAVE_CAPS { unicode = <0x00C0>; };
+                u_grave: U_GRAVE { unicode = <0x00F9>; };
+                u_grave_caps: U_GRAVE_CAPS { unicode = <0x00D9>; };
+                trema: TREMA { unicode = <0x00A8>; };
         };
 
         behaviors {
                 c_cedille_morph_a: c_cedille_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp c_cedille>, <&kp c_cedille_caps>;
+                        bindings = <&kp C_CEDILLE>, <&kp C_CEDILLE_CAPS>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
@@ -42,7 +42,7 @@
                 e_aigu_morph_a: e_aigu_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp e_aigu>, <&kp e_aigu_caps>;
+                        bindings = <&kp E_AIGU>, <&kp E_AIGU_CAPS>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
@@ -56,7 +56,7 @@
                 e_grave_morph_a: e_grave_morph_a {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp e_grave>, <&kp e_grave_caps>;
+                        bindings = <&kp E_GRAVE>, <&kp E_GRAVE_CAPS>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
