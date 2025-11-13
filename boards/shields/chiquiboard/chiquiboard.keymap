@@ -27,10 +27,16 @@
 
 / {
         behaviors {
+                c_cedille: c_cedille {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap "é">;
+                };
+
                 c_cedille_morph_a: c_cedille_morph_a {
                         compatible = "zmk,behavior-mod-morph, behavior-macro";
                         #binding-cells = <0>;
-                        bindings = <&macro_tap "é">, <&macro_tap "É">;
+                        bindings = <&c_cedille>, <&kp F>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
