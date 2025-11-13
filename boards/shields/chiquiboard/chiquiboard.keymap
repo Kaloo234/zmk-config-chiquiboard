@@ -17,7 +17,7 @@
                 E_AIGU_CAPS: e_aigu_caps { unicode = <0x00C9>; };
                 E_GRAVE: e_grave { unicode = <0x00E8>; };
                 E_GRAVE_CAPS: e_grave_caps { unicode = <0x00C8>; };
-                A_GRAVE: a_grave { unicode = <0x00E90>; };
+                A_GRAVE: a_grave { unicode = <0x00E0>; };
                 A_GRAVE_CAPS: a_grave_caps { unicode = <0x00C0>; };
                 U_GRAVE: u_grave { unicode = <0x00F9>; };
                 U_GRAVE_CAPS: u_grave_caps { unicode = <0x00D9>; };
@@ -138,5 +138,3 @@
                 };
         };
 };
-
-
